@@ -1,10 +1,14 @@
-# pre requirments
+#Mainlogic.io
+
+This is presentation site of [mainlogic.io](https://mainlogic.io) it has been developed using Jekyll.
+
+#pre-requirments
 
 ```bash
 bundle install
 ```
 
-# Build instructions
+#Build instructions
 
 ```bash
 jekyll clean
