@@ -167,7 +167,7 @@ jQuery(document).foundation();
     $('form#contact_form').validate({
       messages: { },
       submitHandler: function(form) {
-        $.http({
+        $.ajax({
           type: 'POST',
           url: "https://formspree.io/" + $('input[name="recipient"]', form)[0].value,
           data: $(form).serialize(),
