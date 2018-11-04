@@ -171,13 +171,27 @@ jQuery(document).foundation();
           type: 'POST',
           url: "https://liveformhq.com/form/1fe11611-9cb5-4681-9729-a84d0a0a38f1",
           data: $(form).serialize(),
-          dataType: "json",
-          success: function(data) {
-            if(data.success) {                          
-              $(form).trigger('reset');
+          //dataType: "json",
+		  headers:
+          {
+              "Accept": "application/json"  // this makes the server send you a JSON response
+          },
+          success: function(response)       // handle the successful submission of your POST
+          {
+              console.log(response);        // response contains the form submission that was just made
               $('#thanks').show().removeClass('hide').fadeOut(5000);
-            }
-          }
+              $("#contact_form")[0].reset();// reset the form
+          },
+//          success: function(data) {
+//            if(data.success) {   
+//			  			  
+//              $(form).trigger('reset');
+//              $('#thanks').show().removeClass('hide').fadeOut(5000);
+//            } else {
+//				console.log(1);
+//				alert(1);
+//			}
+//          }
         });
         return false;
       }
