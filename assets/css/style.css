@@ -2001,7 +2001,7 @@ body {
 
 /* Dots */
 .slick-slider {
-  /*margin-bottom: 30px;*/ }
+  margin-bottom: 15px; }
 
 .slick-dots {
   position: relative;
