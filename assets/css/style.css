@@ -2001,9 +2001,10 @@ body {
 
 /* Dots */
 .slick-slider {
-  margin-bottom: 15px; }
+  /*margin-bottom: 30px;*/ }
 
 .slick-dots {
+  margin-right: 0px;
   position: relative;
   bottom: 0;
   list-style: none;
