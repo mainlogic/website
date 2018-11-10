@@ -2004,7 +2004,7 @@ body {
   /*margin-bottom: 30px;*/ }
 
 .slick-dots {
-  margin-right: 0px;
+  margin: 0px;
   position: relative;
   bottom: 0;
   list-style: none;
