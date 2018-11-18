@@ -42,8 +42,6 @@ sass:
   load_paths:
     - bower_components/
 
-incremental: true
-
 exclude: ['gulpfile.js', 'Gemfile', 'Gemfile.lock']
 
 collections:
@@ -57,6 +55,9 @@ defaults:
       type: works
     values:
       layout: work
+
+## This has been added from this page: https://jekyllrb.com/docs/configuration/options/ in order to have only updated what has been changed
+incremental: true
 
 paginate: 4
 paginate_path: "/blog/page/:num"
